@@ -1,0 +1,86 @@
+<navbar
+    [navTitle]="'Educa.org'"
+    [navHref]="'/'"
+></navbar>
+<parallax [imageParallax]="imageHeaderParallax"></parallax>
+<div class="content-cards-courses" *ngIf="listCourseCards.length > 0">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <h1 class="list-title">Confira nossas cursos</h1>
+                <label class="list-subtitle">Aqui você encontrará cursos que vão aumentar o nível do seu currículo</label>
+            </div>
+            <div *ngFor="let currentCard of listCourseCards" class="col-sm-12 col-md-4 col-lg-4">
+                <card-course
+                    [imageCard]="currentCard.image"
+                    [titleCard]="currentCard.title"
+                    [descriptionCard]="currentCard.description"
+                    [buttonText]="'Ver mais'"
+                    [buttonHref]="'/course'"
+                ></card-course>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-teachers-list">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <h1 class="text-white text-center">Conheça nossos professores</h1>
+            </div>
+            <div *ngFor="let currentTeacher of listTeachersCards" class="col-sm-12 col-md-4 col-lg-4">
+                <card-teacher
+                    [imageTeacher]="currentTeacher.image"
+                    [nameTeacher]="currentTeacher.name"
+                    [countryTeacher]="currentTeacher.country"
+                    [descriptionTeacher]="currentTeacher.description"
+                ></card-teacher>
+            </div>
+        </div>
+    </div>
+</div>
+<parallax [imageParallax]="imageCategoryParallax">
+    <div class="container text-center">
+        <div class="row center-images">
+            <div class="col-sm-12 col-md-3 col-lg-3 pt-5">
+                <icon
+                    [iconType]="'angularjs'"
+                ></icon>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 pt-5">
+                <icon
+                    [iconType]="'vuejs'"
+                ></icon>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 pt-5">
+                <icon
+                    [iconType]="'react'"
+                ></icon>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 pt-5">
+                <icon
+                    [iconType]="'nodejs'"
+                ></icon>
+            </div>
+        </div>
+    </div>
+</parallax>
+<div class="content-list-courses" *ngIf="listCourseItems.length > 0">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <h1 class="list-title">Veja nossos cursos mais recentes</h1>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <course-list
+                    [listItemsCourse]="listCourseItems"
+                ></course-list>
+            </div>
+        </div>
+    </div>
+</div>
+<footer
+    [textCopyright]="'Todos os direitos reservados 2020'"
+    [textEmail]="'contato@educa.org'"
+    [textCellphone]="'(11) 5432-5124'"
+></footer>

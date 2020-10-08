@@ -1,0 +1,18 @@
+<div class="card-teacher">
+    <div class="card-avatar">
+        <img
+            [src]="imageTeacher"
+            [alt]="nameTeacher"
+            class="card-profile-picture"
+        />
+        <img
+            [src]="'https://cdn.countryflags.com/thumbs/' + countryTeacher + '/flag-round-250.png'"
+            [alt]="countryTeacher"
+            class="card-profile-country"
+        />
+    </div>
+    <div class="card-summary">
+        <h3>{{nameTeacher}}</h3>
+        <p>{{descriptionTeacher}}</p>
+    </div>
+</div>

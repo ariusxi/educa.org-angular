@@ -1,0 +1,9 @@
+<ul class="content-list-courses">
+    <course-item
+        *ngFor="let currentCardCourse of listItemsCourse"
+        [image]="currentCardCourse.image"
+        [title]="currentCardCourse.title"
+        [description]="currentCardCourse.description"
+        [link]="'/course'"
+    ></course-item>
+</ul>

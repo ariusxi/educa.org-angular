@@ -1,0 +1,14 @@
+<li class="content-list-course-item">
+    <div class="content-list-course-image">
+        <img
+            [src]="image"
+            [alt]="title"
+        />
+    </div>
+    <div class="content-list-course-description">
+        <label class="course-item-title">
+            <a [routerLink]="link">{{ title }}</a>
+        </label>
+        <p class="course-item-description">{{ description }}</p>
+    </div>
+</li>

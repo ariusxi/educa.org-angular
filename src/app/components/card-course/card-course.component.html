@@ -1,0 +1,12 @@
+<div class="card-course">
+    <div class="card-image">
+        <img [src]="imageCard" [alt]="titleCard"/>
+    </div>
+    <div class="card-content">
+        <label>{{ titleCard }}</label>
+        <p>{{ descriptionCard }}</p>
+    </div>
+    <div class="card-course-footer">
+        <a [routerLink]="buttonHref">{{ buttonText }}</a>
+    </div>
+</div>

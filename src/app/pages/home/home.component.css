@@ -1,0 +1,42 @@
+.collapse-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+
+    position: relative;
+    line-height: 17em;
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: var(--color-grey);
+
+    box-shadow: var(--image-parallax-main);
+}
+
+.content-cards-courses,
+.content-teachers-list,
+.content-list-courses {
+    width:100%;
+    position:relative;
+    display:block;
+
+    padding: 10px;
+}
+
+.content-cards-courses h1,
+.content-list-courses h1 {
+    border-left: 3px solid var(--color-navbar);
+}
+
+.content-teachers-list {
+    background-color: var(--color-navbar);
+}
+
+.content-cards-courses h1,
+.content-cards-courses label,
+.content-list-courses h1,
+.content-list-courses label {
+    padding-left: 10px;
+}
+
+.center-images {
+    line-height: 28em;
+}

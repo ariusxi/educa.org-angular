@@ -1,0 +1,8 @@
+ul.content-list-courses {
+    width: 100%;
+    float: left;
+    display: block;
+    position: relative;
+    margin: 10px auto;
+    list-style-type: none;
+}
